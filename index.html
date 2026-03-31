@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapeamento de Responsabilidades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg-shapes">
+      <span class="shape s1"></span>
+      <span class="shape s2"></span>
+      <span class="shape s3"></span>
+    </div>
+    <div class="hero-content fade-in">
+      <p class="hero-eyebrow">Programa de Aprendizagem · Senac</p>
+      <h1 class="hero-title">Mapeamento de<br /><em>Responsabilidades</em></h1>
+      <p class="hero-sub">Compreenda os papéis, direitos e deveres de cada parte do programa.</p>
+      <div class="authors">
+        <div class="author-chip" id="author-juan">
+          <span class="author-avatar">JP</span>
+          <span>Juan Pedrozo</span>
+        </div>
+        <div class="author-chip" id="author-higor">
+          <span class="author-avatar">HL</span>
+          <span>Higor Lourenço</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </header>
+
+  <main class="container">
+
+    <!-- SECTION 1: RESPONSABILIDADES -->
+    <section class="section reveal">
+      <div class="section-tag">01</div>
+      <h2 class="section-title">Responsabilidades</h2>
+      <div class="card-grid">
+        <div class="card card--aprendiz">
+          <div class="card-icon">🎓</div>
+          <h3>Aprendiz</h3>
+          <p>Aprender, frequentar aulas, cumprir horários, aplicar conhecimentos e manter disciplina ao longo de todo o programa.</p>
+        </div>
+        <div class="card card--empresa">
+          <div class="card-icon">🏢</div>
+          <h3>Empresa</h3>
+          <p>Orientar, oferecer ambiente adequado, pagar salário e acompanhar ativamente o desenvolvimento do aprendiz.</p>
+        </div>
+        <div class="card card--senac">
+          <div class="card-icon">📚</div>
+          <h3>Senac</h3>
+          <p>Oferecer ensino de qualidade, acompanhar o desempenho e garantir a excelência na formação profissional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: DIREITOS E DEVERES -->
+    <section class="section reveal">
+      <div class="section-tag">02</div>
+      <h2 class="section-title">Direitos e Deveres</h2>
+      <div class="card-grid">
+        <div class="card card--aprendiz">
+          <div class="card-icon">🎓</div>
+          <h3>Aprendiz</h3>
+          <div class="dd-group">
+            <span class="dd-label dd-direito">Direitos</span>
+            <p>Receber salário, ter acesso ao ensino e trabalhar em segurança.</p>
+          </div>
+          <div class="dd-group">
+            <span class="dd-label dd-dever">Deveres</span>
+            <p>Estudar com dedicação, cumprir horários e agir com responsabilidade.</p>
+          </div>
+        </div>
+        <div class="card card--empresa">
+          <div class="card-icon">🏢</div>
+          <h3>Empresa</h3>
+          <div class="dd-group">
+            <span class="dd-label dd-direito">Direitos</span>
+            <p>Contar com o trabalho e contribuição do aprendiz.</p>
+          </div>
+          <div class="dd-group">
+            <span class="dd-label dd-dever">Deveres</span>
+            <p>Pagar corretamente, orientar e respeitar as leis trabalhistas.</p>
+          </div>
+        </div>
+        <div class="card card--senac">
+          <div class="card-icon">📚</div>
+          <h3>Senac</h3>
+          <div class="dd-group">
+            <span class="dd-label dd-direito">Direitos</span>
+            <p>Exigir participação, pontualidade e engajamento nas aulas.</p>
+          </div>
+          <div class="dd-group">
+            <span class="dd-label dd-dever">Deveres</span>
+            <p>Ensinar, avaliar com justiça e oferecer orientação contínua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INTERDEPENDÊNCIA -->
+    <section class="section reveal">
+      <div class="section-tag">03</div>
+      <h2 class="section-title">Interdependência</h2>
+      <div class="inter-card">
+        <div class="inter-flow">
+          <div class="inter-node node-senac">
+            <span class="inter-node-icon">📚</span>
+            <strong>Senac</strong>
+            <small>Teoria</small>
+          </div>
+          <div class="inter-plus">+</div>
+          <div class="inter-node node-empresa">
+            <span class="inter-node-icon">🏢</span>
+            <strong>Empresa</strong>
+            <small>Prática</small>
+          </div>
+          <div class="inter-plus">=</div>
+          <div class="inter-node node-aprendiz inter-result">
+            <span class="inter-node-icon">🎓</span>
+            <strong>Aprendiz</strong>
+            <small>Desenvolvido</small>
+          </div>
+        </div>
+        <p class="inter-desc">
+          Aprendiz, Empresa e Senac dependem uns dos outros. O Senac fornece a base teórica, a empresa oferece a vivência prática, e o aprendiz conecta ambos para seu desenvolvimento profissional.
+        </p>
+        <button class="btn-ver" id="btn-importancia">Ver Importância ↗</button>
+        <div class="importancia-box" id="importancia-box">
+          <p>✅ O sucesso do programa depende da colaboração entre <strong>Aprendiz</strong>, <strong>Empresa</strong> e <strong>Senac</strong>. Quando cada parte cumpre seu papel, o resultado é um profissional qualificado e um mercado de trabalho mais forte.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CONSEQUÊNCIAS -->
+    <section class="section reveal">
+      <div class="section-tag">04</div>
+      <h2 class="section-title">Consequências do Descumprimento</h2>
+      <div class="card-grid">
+        <div class="card card--aprendiz card--consequence">
+          <div class="card-icon">⚠️</div>
+          <h3>Aprendiz</h3>
+          <p>Desligamento do programa e comprometimento do desenvolvimento profissional.</p>
+        </div>
+        <div class="card card--empresa card--consequence">
+          <div class="card-icon">⚠️</div>
+          <h3>Empresa</h3>
+          <p>Penalidades legais, multas e perda de credibilidade no mercado.</p>
+        </div>
+        <div class="card card--senac card--consequence">
+          <div class="card-icon">⚠️</div>
+          <h3>Senac</h3>
+          <p>Comprometimento da qualidade de ensino e da reputação institucional.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-names">
+      <span class="footer-name">Juan Pedrozo</span>
+      <span class="footer-dot">·</span>
+      <span class="footer-name">Higor Lourenço</span>
+    </div>
+    <p class="footer-sub">Programa de Aprendizagem · Senac 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
